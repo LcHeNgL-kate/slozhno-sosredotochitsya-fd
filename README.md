@@ -1,1 +1,1 @@
-https://github.com/LcHeNgL-kate/slozhno-sosredotochitsya-fd#
+https://github.com/LcHeNgL-kate/slozhno-sosredotochitsya-fd
