@@ -1,12 +1,40 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-img: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --accent-text-color: #000028;
+  --decoration-color: #FF0070;
+}
+
+.theme-dark .text-decoration {
+  display: block;
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+  padding: 0.5px 12px;
+  }
+.theme-dark .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--decoration-color, #FF0070);
+  }
+.theme-dark .header__theme-menu-button_active {
+    border: 1px solid var(--decoration-color, #FF0070);
+  }
+
+@media (prefers-color-scheme: dark) {
+  .theme-auto {
+    --background-img: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+    --accent-color: #FF0070;
+    --title-color: #DB00FF;
+    --main-text-color: #F1B2CE;
+    --accent-text-color: #000028;
+    --decoration-color: #FF0070;
+  }
+  .text-decoration {
+    display: block;
+  }
 }
