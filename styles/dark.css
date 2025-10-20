@@ -24,6 +24,10 @@
     border: 1px solid var(--decoration-color, #FF0070);
   }
 
+/* 
+для смены цветовых схем используется подход через задание класса 
+контейнеру страницы и медиавыражение с prefers-color-scheme */
+
 @media (prefers-color-scheme: dark) {
   .theme-auto {
     --background-img: url(../images/cover-image-dark.png);

@@ -1,5 +1,4 @@
-
-
+/* глав экран */
 .page {
   background-color: var(--background-color, #000028);
   background-image: var(--background-img, url(../images/cover-image-dark.png));
@@ -55,7 +54,7 @@
   font-weight: normal;
 }
 
-
+/* нав */
 .header__theme-menu-item {
   list-style: none;
   text-align: center;
@@ -86,6 +85,7 @@
   pointer-events: none;
 }
 
+/* текст и вопросы */
 .main-title {
   font-weight: 700;
   color: var(--title-color, #DB00FF);
@@ -196,7 +196,10 @@
 .footer {
   block-size: 100vh;
 }
+/* 
+под изменяющиеся элементы */
 
+/* маленький экран */
 @media ( min-width: 375px) {
   .header {
     min-block-size: 668px;
@@ -278,6 +281,7 @@
   }
 }
 
+/* средний */
 @media ( min-width: 768px) {
   .page {
     margin: 0;
@@ -401,6 +405,7 @@
   }
 }
 
+/* самый большо1 */
 @media ( min-width: 1024px) {
   .page {
     margin: 0 auto;
@@ -414,6 +419,10 @@
     justify-items: center;
     margin: 0px 0px 263px;
   }
+   .header__theme-menu-button {
+    margin-right: 14px;
+  }
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -421,14 +430,15 @@
     margin-right: 0px;
     margin-left: 21px;
   }
-  .header__theme-menu-button {
-    margin-right: 14px;
-  }
+
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header-title {
     margin-bottom: 114px;
+  }
+  .article-title__unusual {
+    block-size: min-content;
   }
   .content-section {
     column-gap: 8px;
@@ -438,9 +448,6 @@
   }
  .title-how {
     grid-row: 1/3;
-  }
-  .article-title__unusual {
-    block-size: min-content;
   }
   .different-section__grid-container {
     grid-template-columns: repeat(3, 1fr);

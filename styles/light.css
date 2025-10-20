@@ -23,6 +23,10 @@
   border: 1px solid var(--accent-text-color, #353430);
 }
 
+/* 
+для смены цветовых схем используется подход через задание класса 
+контейнеру страницы и медиавыражение с prefers-color-scheme */
+
 @media (prefers-color-scheme: light) {
   .text-decoration {
     display: none;
