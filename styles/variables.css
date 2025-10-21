@@ -4,7 +4,12 @@
   --accent-color: #FF0070;
   --decoration-color: #FF0070;
   --main-font: 'IBM Plex mono';
-  --accent-font: 'IBMPlexMono-Bold';
+  --accent-font: 'IBM Plex mono';
+
+  /* спасибо, поменала)
+  Просто думала, что болд фонт в фонтс автоматически 
+  добавили для акцентного текста */
+  
   --title-color: #DB00FF;
   --main-text-color: #F1B2CE;
   --accent-text-color: #000028;
